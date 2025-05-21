@@ -1,3 +1,5 @@
+### **1 - Single Responsibility Principle - SRP**
+
 -ا- **SOLID** هي مجموعة من خمسة مبادئ لتصميم البرمجيات في البرمجة الكائنية (Object-Oriented Programming) تهدف إلى جعل الكود أكثر وضوحًا، مرونة، وقابلية للصيانة. الكلمة تتكون من الأحرف الأولى للمبادئ التالية:
 
 1. **S - Single Responsibility Principle (مبدأ المسؤولية الواحدة)**:
