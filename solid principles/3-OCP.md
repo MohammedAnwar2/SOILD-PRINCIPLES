@@ -87,6 +87,11 @@ void main() {
   final filtered = filter.filterProducts(products, 'Price', 500.0);
   print(filtered.map((p) => p.name).toList());
 }
+
+/*
+OUTPUT:
+[Shirt]
+*/
 ```
 
 ##### **أسباب انتهاك OCP**
@@ -148,6 +153,12 @@ void main() {
   final filtered = filter.filterProducts(products, 500.0);
   print(filtered.map((p) => p.name).toList());
 }
+
+
+/*
+OUTPUT:
+[Shirt]
+*/
 ```
 
 ##### **كيف تم الإصلاح؟**
@@ -181,6 +192,12 @@ void main() {
   final discount = calculator.calculateDiscount(1000.0, 'Premium');
   print('الخصم: $discount');
 }
+
+
+/*
+OUTPUT:
+الخصم: 200
+*/
 ```
 
 ##### **أسباب انتهاك OCP**
@@ -225,6 +242,11 @@ void main() {
   final discount = calculator.calculate(1000.0);
   print('الخصم: $discount');
 }
+
+/*
+OUTPUT:
+الخصم: 200
+*/
 ```
 
 ##### **كيف تم الإصلاح؟**
@@ -263,6 +285,11 @@ void main() {
   final result = exporter.exportData(data, 'JSON');
   print(result);
 }
+
+/*
+OUTPUT:
+[{"name":"Laptop","price":1000},{"name":"Phone","price":800}]
+*/
 ```
 
 ##### **أسباب انتهاك OCP**
@@ -315,6 +342,11 @@ void main() {
   final result = exporter.exportData(data);
   print(result);
 }
+
+/*
+OUTPUT:
+[{"name":"Laptop","price":1000},{"name":"Phone","price":800}]
+*/
 ```
 
 ##### **كيف تم الإصلاح؟**
